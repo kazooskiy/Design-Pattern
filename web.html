@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>
+			Design Patterns
+		</title>
+	</head>
+	<body>
+		<script src = "Creational.js"></script>
+		<script src = "Structural.js"></script>
+		<script src = "Behavioral.js"></script>
+
+
+		Kazuru Takase <br>
+		Prof. Keith William<br>
+		Adv. Web Development <br>
+		2/25/2013<br>
+
+		<p><b>
+			1.	An explanation of what a design pattern is
+		</b></p>
+		
+		A design pattern is a format where the javascript is organized so it is functional and easy to read.
+
+		<p><b>
+			2.	An explanation of each respective pattern in terms of what it is and why it is used.
+		</b></p>
+		Creational- Singliton: A class where only one instance(copy) can exist, and provide a global point to access. This is used because Singletom reduces the use of global variables in order to prevent name collisions.<br>
+		Structural- Facade: It provides an interface to a set of another interface in a subsystem. It makes the subsystem eay to use. Using the Facade Pattern only shows the presentation layer, and hides the business objects and their interactions. It is also used to refactor codes. <br>
+		Behavioral- Memento: Provide temporary storage and restoration of an object in Javascript. It is used to take snapshot of an objects state so changes can be altered easily. <br>
+
+		<p><b>
+			3.	An explanation of why and how the two patterns that you have selected work together.
+		</b></p>
+		Creational- Singliton: Singleton is simply instanciate an object, so I did by creating a simple one.
+<br>
+		Structural- Facade: The purpose of the Facade Pattern to // access multiple subsystems, so I created the if-else loop.<br>
+		Behavioral- Memento: I added the factory class "Caretaker". I wanted to demnstrate where the Memento makes the change in the program, so I save the state, messed it up by changing it to "Dog" and "Cat", and then converting it back.<br>
+		<p><b>
+			4.	Your submission should print output to the screen
+		</b></p>
+			<p id="Creational">Show answer: Singleton + ___</p>
+<button type="button" onclick="Singleton.hello();">CLICK</button>
+			<p id="Structural">Show answer: Facade + _____</p>
+<button type="button" onclick="run()">CLICK</button>
+			<p id="Behavioral">Show answer: Memento + Factory</p>
+<button type="button" onclick="run()">CLICK</button>
+
+document.write("Creational");
+
+
+	</body>
+</html>
